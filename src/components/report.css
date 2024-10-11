@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* Estilos para o relatório */
+.report-containner {
+  max-width: 1200px;
+  margin: 0 auto; /* Adiciona uma margem para separação */
+  padding: 40px; /* Reduzido para evitar excesso de margem */
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+}
+
+.report-containner h1 {
+  color: wheat;
+  font-size: 2rem;
+}
+
+.report-containner strong {
+  color: wheat;
+}
+
+.report-containner p {
+  color: red;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #f4f4f4;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 1280px) {
+  .report {
+    padding: 15px;
+    margin: 30px auto; /* Ajusta o espaçamento superior em telas menores */
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+}

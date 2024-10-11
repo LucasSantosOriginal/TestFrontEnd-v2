@@ -1,0 +1,276 @@
+{
+    "SNAP": [
+        {
+            "email": [
+                {
+                    "email address": "email_teste@oi.com.br"
+                },
+                {
+                    "email address": "email_teste@gmail.com"
+                }
+            ],
+            "empresa": [
+                {
+                    "cnpj": "02982367000321",
+                    "vinculo": "emprego",
+                    "renda" : "2.580,36",
+                    "admissao" : "10/12/2022",
+                    "endereco": [
+                        {
+                            "area": "MS",
+                            "area code": "79450000",
+                            "bairro": "PERIFERICO",
+                            "city": "ROCHEDO",
+                            "complemento": "KM 131",
+                            "endereco": "RODOVIA MS 80"
+                        }
+                    ],
+                    "razao social": "EMPRESA TESTE INDUSTRIA E COMERCIO LTDA"
+                },
+                {
+                    "cnpj": "03555562000182",
+                    "vinculo": "sociedade",
+                    "endereco": [
+                        {
+                            "area": "MS",
+                            "area code": "79051290",
+                            "bairro": "VILA VILAS BOAS",
+                            "city": "CAMPO GRANDE",
+                            "endereco": "AVENIDA AUGUSTO DE LIMA",
+                            "numero": "300"
+                        }
+                    ],
+                    "razao social": "TESTE FRONT ENGENHARIA E CONSTRUCOES LTDA"
+                },
+                {
+                    "cnpj": "02222267000319",
+                    "vinculo": "emprego",
+                    "renda" : "3.121,00",
+                    "admissao" : "07/03/2020",
+                    "endereco": [
+                        {
+                            "area": "MS",
+                            "bairro": "CENTRO",
+                            "cep ou zipcode": "79460000",
+                            "city": "ROCHEDO",
+                            "endereco": "RUA TESTE"
+                        }
+                    ],
+                    "telefone": [
+                        {
+                            "operadora": "OI",
+                            "phone number": "5567984591336",
+                            "whatsapp": "Nao"
+                        },
+                        {
+                            "operadora": "OI",
+                            "phone number": "5567971146132",
+                            "whatsapp": "Nao"
+                        }
+                    ],
+                    "razao social": "NAVI CARNES INDUSTRIA E COMERCIO LTDA ME"
+                }
+            ],
+            "endereco": [
+                {
+                    "area": "MS",
+                    "area code": "79070094",
+                    "bairro": "JD MORENAO",
+                    "city": "CAMPO GRANDE",
+                    "complemento": "BL45 AP17",
+                    "logradouro": "RUA PINHO",
+                    "nome": "CAMPO GRANDE"
+                },
+                {
+                    "area": "MS",
+                    "bairro": "GRAJAÚ",
+                    "city": "CAMPO GRANDE",
+                    "logradouro": "RUA JOANA D'ARC",
+                    "telefone relacionado": "67984405081"
+                }
+            ],
+            "pessoa": [
+                {
+                    "cpf": "32123916892",
+                    "data nascimento": "06/06/1985",
+                    "first names": "ADRIANA",
+                    "full name": "ADRIANA APARECIDA TESTE TECHBIZ",
+                    "vinculo": "IRMAO(A)",
+                    "endereco": [
+                        {
+                            "area": "SP",
+                            "bairro": "PRQ RESIDENCIAL JUNDIAI",
+                            "cep ou zipcode": "13212510",
+                            "city": "JUNDIAI",
+                            "endereco": "R NEUSA FARIA BINI",
+                            "nome": "R NEUSA FARIA BINI",
+                            "numero": "106"
+                        }
+                    ],
+                    "procon": "(NAO TEM)",
+                    "sexo": "F",
+                    "surname": "APARECIDA TESTE TECHBIZ",
+                    "titulo de eleitor": "307137411168"
+                },
+                {
+                    "cpf": "35191548301",
+                    "data nascimento": "14/04/1975",
+                    "first names": "CACILDA",
+                    "full name": "CACILDA TESTE TECHBIZ",
+                    "vinculo": "IRMAO(A)",
+                    "endereco": [
+                        {
+                            "area": "MG",
+                            "bairro": "CENTRO",
+                            "cep ou zipcode": "37191003",
+                            "city": "TRES PONTAS",
+                            "endereco": "RUA XAPURI",
+                            "numero": "45"
+                        }
+                    ],
+                    "telefone": [
+                        {
+                            "operadora": "VIVO",
+                            "phone number": "5535989237641"
+                        },
+                        {
+                            "operadora": "CLARO",
+                            "phone number": "5535934582103"
+                        }
+                    ],
+                    "procon": "(NAO TEM)",
+                    "sexo": "F",
+                    "surname": "TESTE TECHBIZ",
+                    "titulo de eleitor": "028513261232"
+                },
+                {
+                    "bookmark": "true",
+                    "cidade_nascimento": "CAMPO GRANDE",
+                    "cpf": "94436504352",
+                    "ctps": "00070",
+                    "data nascimento": "25/12/0000",
+                    "profissao": "PINTOR DE OBRAS",
+                    "escolaridade": "ENSINO MEDIO COMPLETO",
+                    "estado_nascimento": "MS",
+                    "first names": "JOSÉ",
+                    "full name": "JOSÉ MARIA TECHBIZ",
+                    "idade": "55",
+                    "identidade": "923465",
+                    "nacionalidade": "BRASILEIRO",
+                    "pais_nascimento": "BRASIL",
+                    "pis/pasep": "20112013751",
+                    "sexo": "M",
+                    "status receita": "REGULAR",
+                    "surname": "MARIA TECHBIZ",
+                    "titulo de eleitor": "012945111954"
+                },
+                {
+                    "first names": "JUVENCIANO",
+                    "full name": "JUVENCIANO TESTE TECHBIZ",
+                    "vinculo": "PAI",
+                    "surname": "TESTE TECHBIZ"
+                },
+                {
+                    "first names": "LUCAS",
+                    "full name": "LUCAS OUTRO CONTATO",
+                    "vinculo" : "OUTROS CONTATOS",
+                    "location": [
+                        {
+                            "area": "MS",
+                            "area code": "71062301",
+                            "bairro": "PARQUE RESIDENCIAL JARDIM JARAGUA",
+                            "city": "CAMPO GRANDE",
+                            "logradouro": "R RAFAEL DO TESTE",
+                            "numero": "31"
+                        }
+                    ],
+                    "telefone": [
+                        {
+                            "phone number": "6733873153"
+                        }
+                    ],
+                    "surname": "OUTRO CONTATO"
+                },
+                {
+                    "first names": "MARIA",
+                    "full name": "MARIA APARECIDA TESTE TECHBIZ",
+                    "vinculo": "MAE",
+                    "surname": "APARECIDA TESTE TECHBIZ"
+                },
+                {
+                    "cpf": "55556231820",
+                    "data nascimento": "16/01/2001",
+                    "first names": "PABLO",
+                    "full name": "PABLO ENZO TECHBIZ",
+                    "vinculo": "OUTROS CONTATOS",
+                    "telefone": [
+                        {
+                            "operadora": "CLARO",
+                            "phone number": "5567992890855",
+                            "whatsapp": "Sim"
+                        }
+                    ],
+                    "sexo": "M",
+                    "surname": "ENZO TECHBIZ"
+                },
+                {
+                    "cpf": "10102253125",
+                    "data nascimento": "25/03/1948",
+                    "first names": "PAULO",
+                    "full name": "PAULO RICARDO TECHBIZ",
+                    "vinculo": "OUTROS CONTATOS",
+                    "sexo": "M",
+                    "surname": "RICARDO TECHBIZ",
+                    "titulo de eleitor": "000171221301"
+                },
+                {
+                    "cpf": "36401263806",
+                    "data nascimento": "22/01/1993",
+                    "first names": "ROBSON",
+                    "full name": "ROBSON ANTONIO DIAZ",
+                    "vinculo": "SOCIO(A)",
+                    "endereco": [
+                        {
+                            "area": "SP",
+                            "bairro": "JD S F ASSIS",
+                            "cep ou zipcode": "13112591",
+                            "city": "PINDAMONHANGABA",
+                            "complemento": "CASA 1",
+                            "logradouro": "RUA TESTE TECHBIZ",
+                            "numero": "154"
+                        }
+                    ],
+                    "telefone": [
+                        {
+                            "operadora": "NEXTEL",
+                            "phone number": "5511937781325"
+                        },
+                        {
+                            "operadora": "TIM",
+                            "phone number": "5511934793111"
+                        }
+                    ],
+                    "sexo": "M",
+                    "surname": "ANTONIO DIAZ",
+                    "titulo de eleitor": "332933641108"
+                }
+            ],
+            "telefone": [
+                {
+                    "phone number": "5567993307191",
+                    "whatsapp": "Nao"
+                },
+                {
+                    "operadora": "CLARO",
+                    "phone number": "5519981651333",
+                    "whatsapp": "Sim"
+                },
+                {
+                    "operadora": "OI",
+                    "phone number": "5511862630333",
+                    "whatsapp": "Nao"
+                }
+            ]
+        }
+    ]
+}
