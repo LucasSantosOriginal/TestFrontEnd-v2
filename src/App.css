@@ -1,4 +1,11 @@
 /* Estilos gerais da página */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+
 .App {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -23,14 +30,18 @@
   top: 0;
   left: 0;
   box-sizing: border-box;
-  min-height: 40px;
+  min-height: 60px;
   z-index: 1000;
   padding: 10px;
   font-family: 'Bebas Neue', sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Coloca espaço entre os elementos */
+}
+
+.App-header h1,
+.App-header p {
+  margin: 0; /* Remove margens para melhor alinhamento */
 }
 
 .App-header h1 {
@@ -69,6 +80,41 @@
   flex-wrap: wrap; /* Permite que os itens se ajustem no mobile */
 }
 
+/* CPF UTILIZE */
+
+.cpf-utilize h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  letter-spacing: 5px;
+  text-shadow: 0px 0px 3px #FD0000;
+  animation: breathing 8s infinite alternate ease-out; /* Adiciona a animação */
+}
+
+/* Definindo a animação */
+@keyframes breathing {
+  80% {
+    color: #ffffff; /* Cor original (vermelho) */
+  }
+  30% {
+    color: rgba(255, 255, 255, 0.5); /* Cor mais clara (semi-transparente) */
+  }
+  100% {
+    color: rgb(255, 255, 255); /* Retorna à cor original */
+  }
+}
+
+.cpf-utilize p {
+  font-family: "Bebas Neue", sans-serif;
+  text-shadow: 0px 0px 2px #FD0000;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+}
+ 
+
+
+
+
 .search-input {
   background-color: rgb(0, 0, 0);
   padding: 8px;
@@ -89,12 +135,12 @@
 
 .search-button,
 .clear-button {
-  padding: 8px 16px;
+  padding: 10px 16px;
   box-shadow: 1px 0px 2px #FD0000;
   background-color: #0E0E0E;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 15px;
   cursor: pointer;
   min-width: 80px; /* Tamanho mínimo para os botões */
 }
@@ -117,7 +163,7 @@
   }
 
   .App-header h1 {
-    font-size: 1.8rem;
+    font-size: 3.8rem;
   }
 
   .App-header p {
@@ -149,7 +195,6 @@
     flex: 1; /* Permite que o input ocupe espaço disponível */
     min-width: 150px; /* Tamanho mínimo para o input, ajuste conforme necessário */
   }
-
   .search-button,
   .clear-button {
     width: auto; /* Botões não ocupam toda a largura no mobile */
@@ -158,15 +203,3 @@
   }
 }
 
-/* Estilos para telas maiores que 1280px (Desktop) */
-@media (min-width: 1280px) {
-  body {
-    max-width: 1200px; /* Limita a largura em telas muito grandes */
-    margin: 0 auto; /* Centraliza o conteúdo em telas grandes */
-    padding: 40px; /* Adiciona mais espaçamento para grandes resoluções */
-  }
-
-  h1 {
-    font-size: 3.2em; /* Aumenta o tamanho das fontes em desktops */
-  }
-}

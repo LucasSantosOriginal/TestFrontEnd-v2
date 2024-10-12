@@ -3,11 +3,11 @@
 /* Estilos para o relatório */
 .report-containner {
   max-width: 1200px;
-  margin: 0 auto; /* Adiciona uma margem para separação */
-  padding: 20px; /* Reduzido para evitar excesso de margem */
+  margin: 20px auto; /* Adiciona uma margem superior */
+  padding: 40px 20px; /* Ajuste o padding se necessário */
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
-  overflow-x: hidden; /* Evita scroll horizontal */
+  overflow-x: hidden; /* Mantenha isso se necessário */
 }
 
 /* .report-containner h1 {
@@ -18,11 +18,14 @@
 
 .report-containner strong {
   color: rgb(172, 7, 7);
+  
 }
 
 .report-containner p {
   font-family: "Source Code Pro", monospace;
   color: wheat;
+  font-size: 13px;
+  text-align: left;
 }
 
 section {

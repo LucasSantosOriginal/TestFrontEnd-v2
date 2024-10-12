@@ -2,40 +2,45 @@ import { useState, useEffect } from "react";
 import "./report.css";
 
 interface ReportProps {
-  cpf: string; // Recebe o CPF como prop
+  cpf: string;
 }
 
 const Report = ({ cpf }: ReportProps) => {
   const [personData, setPersonData] = useState<any>(null);
+  const [loading, setLoading] = useState(true); // Para controlar o carregamento
 
   useEffect(() => {
-    // Carregar o JSON da pasta 'public' usando fetch
     const fetchData = async () => {
+      setLoading(true); // Inicia o carregamento
       try {
         const response = await fetch("/api-result.json");
         const data = await response.json();
 
-        // Encontrar o registro com o CPF passado como prop
         const person = data.SNAP[0].pessoa.find(
           (entry: any) => entry.cpf === cpf
         );
 
         if (person) {
           setPersonData(person);
+        } else {
+          alert("Nenhum dado encontrado para este CPF!"); // Mensagem de erro se não encontrado
         }
       } catch (error) {
         console.error("Erro ao buscar dados:", error);
+      } finally {
+        setLoading(false); // Finaliza o carregamento
       }
     };
 
     fetchData();
-  }, [cpf]); // O useEffect será chamado sempre que o CPF mudar
+  }, [cpf]);
 
   return (
     <div>
-      {personData ? (
+      {loading ? (
+        <p>CARREGANDO DADOS...</p>
+      ) : personData ? (
         <div className="report-containner">
-          {/* <h1>Relatório de {personData["full name"]}</h1> */}
           <p>
             <strong>NOME COMPLETO:</strong> {personData["full name"]}
           </p>
@@ -83,7 +88,7 @@ const Report = ({ cpf }: ReportProps) => {
           </p>
         </div>
       ) : (
-        <p>CARREGANDO DADOS...</p>
+        <p>Nenhum dado encontrado para este CPF!</p>
       )}
     </div>
   );

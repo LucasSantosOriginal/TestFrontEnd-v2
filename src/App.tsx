@@ -25,31 +25,41 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <h1>Relatório de Informações</h1>
-        <p>Utilize o CPF: 94436504352</p>
+
+        {/* Mover o search-container para dentro do header */}
+        <div className="search-container">
+          <input
+            type="text"
+            placeholder="Digite o CPF para pesquisa"
+            value={searchCPF}
+            onChange={(e) => setSearchCPF(e.target.value)}
+            className="search-input"
+          />
+          <button onClick={handleSearch} className="search-button">
+            Pesquisar
+          </button>
+          <button onClick={handleClear} className="clear-button">
+            Limpar
+          </button>
+        </div>
       </header>
 
-      {/* Novo container para centralizar o search */}
-      <div className="search-container">
-        <input
-          type="text"
-          placeholder="Digite o CPF para pesquisa"
-          value={searchCPF}
-          onChange={(e) => setSearchCPF(e.target.value)}
-          className="search-input"
-        />
-        <button onClick={handleSearch} className="search-button">
-          Pesquisar
-        </button>
-        <button onClick={handleClear} className="clear-button">
-          Limpar
-        </button>
-      </div>
+      {/* Mantenha o report visível enquanto a barra de pesquisa continua visível */}
+      <div className="report-container">
+        {showReport && <Report cpf={searchCPF} />}
 
-      {showReport && (
-        <div className="report-container">
-          <Report cpf={searchCPF} />
-        </div>
-      )}
+        {/* A div cpf-utilize desaparece se showReport for verdadeiro */}
+        {!showReport && (
+          <div className="cpf-utilize">
+            <h1>94436504352</h1>
+            <p>
+              Copie o CPF indicado acima e cole-o na barra de pesquisa.
+              <br />
+              Depois clique em 'Limpar' para limpar a página!
+            </p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
