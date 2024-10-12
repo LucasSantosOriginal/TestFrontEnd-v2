@@ -26,24 +26,24 @@ const App = () => {
       <header className="App-header">
         <h1>Relatório de Informações</h1>
         <p>Utilize o CPF: 94436504352</p>
-
-        {/* Campo de pesquisa à esquerda */}
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Digite o CPF para pesquisa"
-            value={searchCPF}
-            onChange={(e) => setSearchCPF(e.target.value)}
-            className="search-input"
-          />
-          <button onClick={handleSearch} className="search-button">
-            Pesquisar
-          </button>
-          <button onClick={handleClear} className="clear-button">
-            Limpar
-          </button>
-        </div>
       </header>
+
+      {/* Novo container para centralizar o search */}
+      <div className="search-container">
+        <input
+          type="text"
+          placeholder="Digite o CPF para pesquisa"
+          value={searchCPF}
+          onChange={(e) => setSearchCPF(e.target.value)}
+          className="search-input"
+        />
+        <button onClick={handleSearch} className="search-button">
+          Pesquisar
+        </button>
+        <button onClick={handleClear} className="clear-button">
+          Limpar
+        </button>
+      </div>
 
       {showReport && (
         <div className="report-container">

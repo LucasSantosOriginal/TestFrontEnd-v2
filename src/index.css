@@ -29,14 +29,26 @@ body {
   flex-direction: column; /* Flexível para ajustar no mobile */
   min-width: 320px;
   min-height: 100vh;
-  padding: 50px; /* Adiciona padding para respiro em telas menores */
-  background: linear-gradient(90deg, #000 1%,#FD0000 500%);
+  padding: 0; /* Remove padding para evitar espaço extra */
+  background: linear-gradient(90deg, #000 1%, #FD0000 500%);
 }
 
 h1 {
   font-size: 2.2em; /* Tamanho reduzido para telas menores */
   line-height: 1.1;
   margin: 10px 0; /* Espaçamento menor para o mobile */
+}
+
+/* Responsividade */
+@media (max-width: 1280px) {
+  .report {
+    padding: 15px;
+    margin: 30px auto; /* Ajusta o espaçamento superior em telas menores */
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Estilos para telas maiores que 1280px (Desktop) */

@@ -35,55 +35,55 @@ const Report = ({ cpf }: ReportProps) => {
     <div>
       {personData ? (
         <div className="report-containner">
-          <h1>Relatório de {personData["full name"]}</h1>
+          {/* <h1>Relatório de {personData["full name"]}</h1> */}
           <p>
-            <strong>Nome completo:</strong> {personData["full name"]}
+            <strong>NOME COMPLETO:</strong> {personData["full name"]}
           </p>
           <p>
             <strong>CPF:</strong> {personData.cpf}
           </p>
           <p>
-            <strong>Idade:</strong> {personData.idade}
+            <strong>IDADE:</strong> {personData.idade}
           </p>
           <p>
-            <strong>Profissão:</strong> {personData.profissao}
+            <strong>PROFISSÃO:</strong> {personData.profissao}
           </p>
           <p>
-            <strong>Escolaridade:</strong> {personData.escolaridade}
+            <strong>ESCOLARIDADE:</strong> {personData.escolaridade}
           </p>
           <p>
-            <strong>Nacionalidade:</strong> {personData.nacionalidade}
+            <strong>NACIONALIDADE:</strong> {personData.nacionalidade}
           </p>
           <p>
-            <strong>Sexo:</strong> {personData.sexo}
+            <strong>SEXO:</strong> {personData.sexo}
           </p>
           <p>
-            <strong>Data de nascimento:</strong> {personData["data nascimento"]}
+            <strong>DATA DE NASCIMENTO:</strong> {personData["data nascimento"]}
           </p>
           <p>
-            <strong>Cidade de nascimento:</strong>{" "}
+            <strong>CIDADE DE NASCIMENTO:</strong>{" "}
             {personData["cidade_nascimento"]}
           </p>
           <p>
-            <strong>Estado de nascimento:</strong>{" "}
+            <strong>ESTADO DE NASCIMENTO:</strong>{" "}
             {personData["estado_nascimento"]}
           </p>
           <p>
-            <strong>País de nascimento:</strong> {personData["pais_nascimento"]}
+            <strong>PAÍS DE NASCIMENTO:</strong> {personData["pais_nascimento"]}
           </p>
           <p>
-            <strong>Identidade:</strong> {personData.identidade}
+            <strong>IDENTIDADE:</strong> {personData.identidade}
           </p>
           <p>
-            <strong>Título de eleitor:</strong>{" "}
+            <strong>TÍTULO DE ELEITOR:</strong>{" "}
             {personData["titulo de eleitor"]}
           </p>
           <p>
-            <strong>Status Receita:</strong> {personData["status receita"]}
+            <strong>STATUS RECEITA:</strong> {personData["status receita"]}
           </p>
         </div>
       ) : (
-        <p>Carregando dados...</p>
+        <p>CARREGANDO DADOS...</p>
       )}
     </div>
   );

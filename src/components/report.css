@@ -4,22 +4,25 @@
 .report-containner {
   max-width: 1200px;
   margin: 0 auto; /* Adiciona uma margem para separação */
-  padding: 40px; /* Reduzido para evitar excesso de margem */
+  padding: 20px; /* Reduzido para evitar excesso de margem */
   font-family: "Source Code Pro", monospace;
   font-optical-sizing: auto;
+  overflow-x: hidden; /* Evita scroll horizontal */
 }
 
-.report-containner h1 {
+/* .report-containner h1 {
   color: wheat;
-  font-size: 2rem;
-}
+  font-size: 2em;
+  padding: 50px;
+} */
 
 .report-containner strong {
-  color: wheat;
+  color: rgb(172, 7, 7);
 }
 
 .report-containner p {
-  color: red;
+  font-family: "Source Code Pro", monospace;
+  color: wheat;
 }
 
 section {
@@ -45,9 +48,9 @@ li {
     margin: 30px auto; /* Ajusta o espaçamento superior em telas menores */
   }
 
-  h1 {
+  /* h1 {
     font-size: 1.5rem;
-  }
+  } */
 
   h2 {
     font-size: 1.2rem;
